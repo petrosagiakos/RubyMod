@@ -282,7 +282,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
              //fire sword 
              ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FIRE_SWORD.get())
                 .pattern(" A ")
-                .pattern(" A")
+                .pattern(" A ")
                 .pattern(" B ")
                 .define('A', Items.BLAZE_POWDER)
                 .define('B',Items.STICK)
