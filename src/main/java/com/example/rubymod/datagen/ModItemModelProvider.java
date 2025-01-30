@@ -55,7 +55,7 @@ public class ModItemModelProvider extends ItemModelProvider{
         basicItem(ModItems.MAGIC_BLADE.get());
         basicItem(ModItems.HEALER.get());
         handheldItem(ModItems.SPEAR);
-        
+        handheldItem(ModItems.FIRE_SWORD);
         
 
     }

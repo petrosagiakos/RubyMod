@@ -83,6 +83,7 @@ public class ModItems{
 
     //spear item
     public static final RegistryObject<Item> SPEAR = ITEMS.register("spear",()->new TridentItem(new Item.Properties().stacksTo(64).durability(250)));
+    public static final RegistryObject<Item> FIRE_SWORD = ITEMS.register("fire_sword", () -> new SwordItem(ModToolTiers.FIRE, new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.FIRE, 200, -0.7f))));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
