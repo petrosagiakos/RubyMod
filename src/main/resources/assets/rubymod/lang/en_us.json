@@ -30,7 +30,10 @@
     "item.rubymod.emerald_boots":"Emerald Boots",
     "item.rubymod.pitogyro":"Pitogyro",
     "item.rubymod.magic_blade":"Magic Blade",
+    
     "item.rubymod.healer":"Healer",
+    "item.rubymod.elephant_egg":"Elephant Spawn Egg",
+    "entity.rubymod.elephant": "Elephant",
 
     "item.rubymod.spear":"Spear",
 
@@ -38,5 +41,7 @@
     "block.rubymod.ruby_ore":"Ruby Ore",
     "creativetab.rubymod.ruby_items":"Ruby Items",
     "creativetab.rubymod.ruby_block":"Ruby Blocks"
+
+    
 
 }

@@ -54,6 +54,7 @@ public class ModCreativeTabs {
                 output.accept(ModItems.COPPER_LEGGINGS.get());
                 output.accept(ModItems.COPPER_BOOTS.get());
                 output.accept(ModItems.FIRE_SWORD.get());
+                output.accept(ModItems.ELEPHANT_SPAWN_EGG.get());
             }).build());
             //Block Tab
     public static final RegistryObject<CreativeModeTab> RUBY_BLOCKS_TAB=CREATIVE_MODE_TABS.register("ruby_blocks_tab",
