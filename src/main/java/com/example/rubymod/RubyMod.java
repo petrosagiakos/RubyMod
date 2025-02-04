@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import com.example.rubymod.blocks.ModBlocks;
 import com.example.rubymod.entity.ModEntities;
 import com.example.rubymod.entity.client.ElephantRenderer;
+import com.example.rubymod.entity.client.BulletRenderer;
 import com.example.rubymod.items.*;
 import com.example.rubymod.blocks.*;
 
@@ -92,6 +93,7 @@ public class RubyMod
             //ModItemProperties.addCustomItemProperties();
 
             EntityRenderers.register(ModEntities.ELEPHANT.get(), ElephantRenderer::new);
+            EntityRenderers.register(ModEntities.BULLET.get(), BulletRenderer::new);
         }
     }
 }

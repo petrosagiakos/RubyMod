@@ -1,4 +1,5 @@
-// 1.21.1	2025-02-01T00:00:17.5142309	Item Models: rubymod
+// 1.21.1	2025-02-04T18:40:41.4123849	Item Models: rubymod
+ddee61602850dbd23abdade2cf5ffdab332ac5e4 assets/rubymod/models/item/bullet.json
 d1e1bc183e0afa68a83b80f40880c77a2220436b assets/rubymod/models/item/copper_axe.json
 21e298f2c151da5950bd178d51d8fbea19e1cae5 assets/rubymod/models/item/copper_boots.json
 4cb00662e1f98e345ba66bdc896b249bdc2bf80e assets/rubymod/models/item/copper_chestplate.json
@@ -19,6 +20,7 @@ d4c5eea506ee4dbbe7502168775f657f8dc4080e assets/rubymod/models/item/emerald_ches
 fc3e35d812b3e7646a4c720cd2959e1b6ff72328 assets/rubymod/models/item/emerald_shovel.json
 506c4efa4ffeb0023809533ed29ee1e4e329e857 assets/rubymod/models/item/emerald_sword.json
 a696d525c0a7e87efb8cdb192c54f9fdba657ef5 assets/rubymod/models/item/fire_sword.json
+ba0e1d7f4daaa00cf8b6b33b7a3bbbdccceeb25e assets/rubymod/models/item/gun.json
 b9ed313bab5729d76e6040e28ade9c544c9052ca assets/rubymod/models/item/healer.json
 9426855ceb534af003b5af1a08a310472b3dee11 assets/rubymod/models/item/magic_blade.json
 f5c3283c0139e820d58a168c6bd8bf85dcce3241 assets/rubymod/models/item/pitogyro.json

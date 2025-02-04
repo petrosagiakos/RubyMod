@@ -5,6 +5,8 @@ package com.example.rubymod.event;
 import com.example.rubymod.RubyMod;
 import com.example.rubymod.entity.ModEntities;
 import com.example.rubymod.entity.client.ElephantModel;
+import com.example.rubymod.entity.client.BulletModel;
+import com.example.rubymod.entity.custom.BulletEntity;
 import com.example.rubymod.entity.custom.ElephantEntity;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
@@ -16,10 +18,13 @@ public class ModEventBusEvents {
     @SubscribeEvent
     public static void registerLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
         event.registerLayerDefinition(ElephantModel.LAYER_LOCATION, ElephantModel::createBodyLayer);
+        event.registerLayerDefinition(BulletModel.LAYER_LOCATION, BulletModel::createBodyLayer);
     }
 
     @SubscribeEvent
     public static void registerAttributes(EntityAttributeCreationEvent event) {
         event.put(ModEntities.ELEPHANT.get(), ElephantEntity.createAttributes().build());
+
     }
+    
 }

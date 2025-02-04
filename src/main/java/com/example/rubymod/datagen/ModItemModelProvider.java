@@ -57,6 +57,8 @@ public class ModItemModelProvider extends ItemModelProvider{
         handheldItem(ModItems.SPEAR);
         handheldItem(ModItems.FIRE_SWORD);
         withExistingParent(ModItems.ELEPHANT_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        handheldItem(ModItems.GUN);
+        basicItem(ModItems.BULLET_ITEM.get());
         
 
     }
