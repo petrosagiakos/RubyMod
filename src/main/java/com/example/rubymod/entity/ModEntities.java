@@ -2,6 +2,7 @@ package com.example.rubymod.entity;
 
 import com.example.rubymod.RubyMod;
 import com.example.rubymod.entity.custom.BulletEntity;
+import com.example.rubymod.entity.custom.SpearEntity;
 import com.example.rubymod.entity.custom.ElephantEntity;
 
 import net.minecraft.resources.ResourceLocation;
@@ -24,6 +25,10 @@ public class ModEntities {
                     ENTITY_TYPES.register("bullet", () -> EntityType.Builder.<BulletEntity>of(BulletEntity::new, MobCategory.MISC)
                             .sized(0.25f, 0.25f).clientTrackingRange(4) 
                             .updateInterval(1).build("bullet"));
+        public static final RegistryObject<EntityType<SpearEntity>> SPEAR =
+                ENTITY_TYPES.register("spear", () -> EntityType.Builder.<SpearEntity>of(SpearEntity::new, MobCategory.MISC)
+                        .sized(1f, 1f).clientTrackingRange(4) 
+                        .updateInterval(1).build("spear"));
 
 
     public static void register(IEventBus eventBus) {

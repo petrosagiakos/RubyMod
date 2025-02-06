@@ -5,6 +5,7 @@ import com.example.rubymod.entity.ModEntities;
 import com.example.rubymod.items.custom_items.MagicBlade;
 import com.example.rubymod.items.custom_items.HealItem;
 import com.example.rubymod.items.custom_items.Gun;
+import com.example.rubymod.items.custom_items.SpearItem;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.PickaxeItem;
@@ -85,11 +86,11 @@ public class ModItems{
 
 
     //spear item
-    public static final RegistryObject<Item> SPEAR = ITEMS.register("spear",()->new TridentItem(new Item.Properties().stacksTo(64).durability(250)));
+    public static final RegistryObject<Item> SPEAR = ITEMS.register("spear",()->new SpearItem(new Item.Properties().stacksTo(64)));
     public static final RegistryObject<Item> FIRE_SWORD = ITEMS.register("fire_sword", () -> new SwordItem(ModToolTiers.FIRE, new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.FIRE, 200, -0.7f))));
     
     public static final RegistryObject<Item> BULLET_ITEM=ITEMS.register("bullet", ()->new Item(new Item.Properties()));
-    public static final RegistryObject<Item> GUN = ITEMS.register("gun", ()->new Gun(new Item.Properties()));
+    public static final RegistryObject<Item> GUN = ITEMS.register("gun", ()->new Gun(new Item.Properties().durability(25000)));
     public static final RegistryObject<Item> ELEPHANT_SPAWN_EGG = ITEMS.register("elephant_spawn_egg", () -> new ForgeSpawnEggItem(ModEntities.ELEPHANT,0x736452 , 0x45af23, new Item.Properties()));
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

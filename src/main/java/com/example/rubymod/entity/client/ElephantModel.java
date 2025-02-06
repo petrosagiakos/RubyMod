@@ -75,20 +75,20 @@ public class ElephantModel<T extends ElephantEntity> extends HierarchicalModel<T
 		PartDefinition hr_r1 = horns.addOrReplaceChild("hr_r1", CubeListBuilder.create().texOffs(70, 87).addBox(0.0F, -1.0F, -1.0F, 1.0F, 1.0F, 10.0F, new CubeDeformation(0.0F))
 		.texOffs(48, 87).addBox(-9.0F, -1.0F, -1.0F, 1.0F, 1.0F, 10.0F, new CubeDeformation(0.0F)), PartPose.offsetAndRotation(6.0F, -23.0F, 14.0F, -0.6981F, 0.0F, 0.0F));
 
-		PartDefinition f1 = body.addOrReplaceChild("f1", CubeListBuilder.create().texOffs(46, 58).addBox(-21.0F, -14.0F, 0.0F, 6.0F, 23.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offset(1.0F, 1.0F, 1.0F));
+		PartDefinition f1 = body.addOrReplaceChild("f1", CubeListBuilder.create().texOffs(46, 58).addBox(-21.0F, -14.0F, 0.0F, 6.0F, 23.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
 
-		PartDefinition f2 = body.addOrReplaceChild("f2", CubeListBuilder.create().texOffs(24, 87).addBox(-4.0F, -14.0F, 0.0F, 6.0F, 23.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offset(1.0F, 1.0F, 1.0F));
+		PartDefinition f2 = body.addOrReplaceChild("f2", CubeListBuilder.create().texOffs(24, 87).addBox(-4.0F, -14.0F, 0.0F, 6.0F, 23.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
 
-		PartDefinition f3 = body.addOrReplaceChild("f3", CubeListBuilder.create().texOffs(0, 83).addBox(-2.0F, -15.0F, -1.0F, 6.0F, 23.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offset(1.0F, 1.0F, 1.0F));
+		PartDefinition f3 = body.addOrReplaceChild("f3", CubeListBuilder.create().texOffs(0, 83).addBox(-2.0F, -15.0F, -1.0F, 6.0F, 23.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offset(-2.0F, 1.0F, 25.0F));
 
-		PartDefinition f4 = body.addOrReplaceChild("f4", CubeListBuilder.create().texOffs(70, 58).addBox(-21.0F, -14.0F, 24.0F, 6.0F, 23.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offset(1.0F, 1.0F, 1.0F));
+		PartDefinition f4 = body.addOrReplaceChild("f4", CubeListBuilder.create().texOffs(70, 58).addBox(-21.0F, -14.0F, 24.0F, 6.0F, 23.0F, 6.0F, new CubeDeformation(0.0F)), PartPose.offset(0.0F, 0.0F, 0.0F));
 
 		return LayerDefinition.create(meshdefinition, 128, 128);
 	}
 
 	@Override
 	public void setupAnim(T entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
-        this.animateWalk(ElephantAnimations.WALKING, limbSwing, limbSwingAmount, 2f, 2.5f);
+        //this.animateWalk(ElephantAnimations.WALKING, limbSwing, limbSwingAmount, 2f, 2.5f);
 		
 	}
 

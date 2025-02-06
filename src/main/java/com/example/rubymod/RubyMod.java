@@ -5,6 +5,7 @@ import com.example.rubymod.blocks.ModBlocks;
 import com.example.rubymod.entity.ModEntities;
 import com.example.rubymod.entity.client.ElephantRenderer;
 import com.example.rubymod.entity.client.BulletRenderer;
+import com.example.rubymod.entity.client.SpearRenderer;
 import com.example.rubymod.items.*;
 import com.example.rubymod.blocks.*;
 
@@ -94,6 +95,7 @@ public class RubyMod
 
             EntityRenderers.register(ModEntities.ELEPHANT.get(), ElephantRenderer::new);
             EntityRenderers.register(ModEntities.BULLET.get(), BulletRenderer::new);
+            EntityRenderers.register(ModEntities.SPEAR.get(), SpearRenderer::new);
         }
     }
 }
