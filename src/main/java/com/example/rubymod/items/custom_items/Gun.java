@@ -27,7 +27,7 @@ public class Gun extends Item {
             if (!world.isClientSide) { // Server-side execution
                 ItemStack bullets=getAmmo(player);
                 BulletEntity bullet = new BulletEntity(ModEntities.BULLET.get(),world, player,ammo);
-                bullet.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 3.0F, 1.0F);
+                bullet.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 100.0F, 0.0F);
                 world.addFreshEntity(bullet);
                 bullets.shrink(1);
             }
