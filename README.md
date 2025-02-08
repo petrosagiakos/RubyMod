@@ -12,18 +12,18 @@
 ---
 
 ## **Installation Without minecraft**
-- Step 1: Download forge-mdk-1.21.1-52.0.28.
-- Step 2: Download or clone this repo, copy everything from inside and paste it to the forge-mdk-1.21.1-52.0.28 folder.
-- Step 3: Replace files and folders.
-- Step 4: Open with vscode.
-- Step 5: Download form plugins Java SDK 17 or higher and Gradle.
-- Step 6: Open a cmd in the forge-mdk and run ./gradlew build.
-- Step 7: Run ./gradlew runData. 
-- Step 8: Run ./gradlew runClient.
+
+- Step 1: Download or clone this repo, copy everything from inside and paste it to the forge-mdk-1.21.1-52.0.28 folder.
+- Step 2: Open the folder with vscode.
+- Step 3: Download form plugins Java SDK 17 or higher and Gradle.
+- Step 4: Open a cmd in the forge-mdk and run ./gradlew build.
+- Step 5: Run ./gradlew runData. 
+- Step 6: Run ./gradlew runClient.
+
 ## **Installation using minecraft**
 - Step 1: If you dont have minecraft download minecraft-launcher.
 - Step 2: Download forge-1.21.1-52.0.28 and Install it.
-- Step 3: Open minecraft launcher and select the forge version.
+- Step 3: Open minecraft launcher and select the forge version above.
 - Step 4: Download the .jar file and paste it in the forge mods folder.
 ### **Requirements for minecraft **
 - **Minecraft Version:** 1.21.1
@@ -34,15 +34,15 @@
 
 ### **Prerequisites**
 - Java SDK 17 or higher ([Download Java SDK](https://www.oracle.com/java/))
-- Gradle ([Install Gradle](https://gradle.org/install/))
+
 
 ---
 
 ### **Tested**
-- This mod has tested succesfully in 2 windows computers
+- This mod has tested succesfully in a windows machine and an arch linux machine
 
 ### **Our Team**
 This mod was developed by highly skilled developers
 - Sagiakos Petros
--Efsevia Makri
+- Efsevia Makri
 
