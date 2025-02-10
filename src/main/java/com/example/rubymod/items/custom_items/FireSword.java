@@ -12,7 +12,7 @@ public class FireSword extends SwordItem {
         
     }
 
-    @Override
+    @Override//overrides the SwordItem method
     public boolean hurtEnemy(ItemStack stack, LivingEntity target, LivingEntity attacker) {
         target.setRemainingFireTicks(100); // 5 seconds (20 ticks per second)
         return super.hurtEnemy(stack, target, attacker);

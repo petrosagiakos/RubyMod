@@ -43,13 +43,13 @@ public class ElephantEntity extends Animal{
         
         this.goalSelector.addGoal(7, new RandomLookAroundGoal(this));
         
-        this.goalSelector.addGoal(8,new ZombieAttackGoal(new Zombie(super.level()), 7f,true ));
+        this.goalSelector.addGoal(8,new ZombieAttackGoal(new Zombie(super.level()), 7f,true ));//failure not working still
     }   
     public static AttributeSupplier.Builder createAttributes() {
         return Animal.createLivingAttributes()
                 .add(Attributes.MAX_HEALTH, 60D)//sets health
                 .add(Attributes.MOVEMENT_SPEED, 0.35D)//sets speed
-                .add(Attributes.FOLLOW_RANGE, 50D)
+                .add(Attributes.FOLLOW_RANGE, 50D)//if you hold an apple follows 50 blocks away 
                 .add(Attributes.ATTACK_DAMAGE,12D);
     }
 

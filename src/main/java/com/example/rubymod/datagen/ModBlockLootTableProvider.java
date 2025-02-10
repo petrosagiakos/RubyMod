@@ -30,7 +30,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider{
     protected void generate(){
         dropSelf(ModBlocks.RUBY_BLOCK.get());//drops ruby block when brakes
         //drops ruby when brakes
-        this.add(ModBlocks.RUBY_ORE.get(), block -> createMultipleOreDrops(ModBlocks.RUBY_ORE.get(), ModItems.RUBY.get(),1,3));
+        this.add(ModBlocks.RUBY_ORE.get(), block -> createMultipleOreDrops(ModBlocks.RUBY_ORE.get(), ModItems.RUBY.get(),1,3));//1-3 rubies
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

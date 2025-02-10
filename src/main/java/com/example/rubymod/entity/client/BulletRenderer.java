@@ -10,13 +10,13 @@ import net.minecraft.resources.ResourceLocation;
 
 public class BulletRenderer extends ArrowRenderer<BulletEntity> {
 
-   
+   //the folding thing
     public BulletRenderer(EntityRendererProvider.Context context) {
         super(context);
     }
   
     @Override
     public ResourceLocation getTextureLocation(BulletEntity entity) {
-        return ResourceLocation.fromNamespaceAndPath(RubyMod.MODID, "textures/entity/bullet/bullet.png");
+        return ResourceLocation.fromNamespaceAndPath(RubyMod.MODID, "textures/entity/bullet/bullet.png");//path to find the texture
     }
 }

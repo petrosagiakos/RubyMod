@@ -27,9 +27,9 @@ public class Gun extends Item {
             if (!world.isClientSide) { // Server-side execution
                 ItemStack bullets=getAmmo(player);
                 BulletEntity bullet = new BulletEntity(ModEntities.BULLET.get(),world, player,ammo);
-                bullet.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 100.0F, 0.0F);
+                bullet.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 100.0F, 0.0F);//last parameter: defines the percision of the target
                 world.addFreshEntity(bullet);
-                bullets.shrink(1);
+                bullets.shrink(1);//reduces the bullets by one
             }
             return InteractionResultHolder.sidedSuccess(stack, world.isClientSide());
         }else {
@@ -40,7 +40,7 @@ public class Gun extends Item {
         
     }
 
-    private ItemStack getAmmo(Player player) {
+    private ItemStack getAmmo(Player player) {//checks if the player has bullets
         for (ItemStack itemStack : player.getInventory().items) {
             if (itemStack.getItem() == ModItems.BULLET_ITEM.get()) {
                 return itemStack;
