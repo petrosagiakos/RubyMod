@@ -4,6 +4,7 @@ import com.example.rubymod.RubyMod;
 import com.example.rubymod.entity.ModEntities;
 import com.example.rubymod.items.custom_items.MagicBlade;
 import com.example.rubymod.items.custom_items.HealItem;
+import com.example.rubymod.items.custom_items.FireSword;
 import com.example.rubymod.items.custom_items.Gun;
 import com.example.rubymod.items.custom_items.SpearItem;
 
@@ -87,7 +88,7 @@ public class ModItems{
 
     //spear item
     public static final RegistryObject<Item> SPEAR = ITEMS.register("spear",()->new SpearItem(new Item.Properties().stacksTo(64)));
-    public static final RegistryObject<Item> FIRE_SWORD = ITEMS.register("fire_sword", () -> new SwordItem(ModToolTiers.FIRE, new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.FIRE, 200, -0.7f))));
+    public static final RegistryObject<Item> FIRE_SWORD = ITEMS.register("fire_sword", () -> new FireSword(ModToolTiers.FIRE, new Item.Properties().attributes(SwordItem.createAttributes(ModToolTiers.FIRE, 200, -0.7f))));
     
     public static final RegistryObject<Item> BULLET_ITEM=ITEMS.register("bullet", ()->new Item(new Item.Properties()));
     public static final RegistryObject<Item> GUN = ITEMS.register("gun", ()->new Gun(new Item.Properties().durability(25000)));
