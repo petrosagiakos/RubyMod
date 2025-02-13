@@ -7,6 +7,7 @@ import com.example.rubymod.entity.client.ElephantRenderer;
 import com.example.rubymod.entity.client.BulletRenderer;
 import com.example.rubymod.entity.client.SpearRenderer;
 import com.example.rubymod.items.*;
+import com.example.rubymod.sound.ModSounds;
 import com.example.rubymod.blocks.*;
 
 import net.minecraft.client.renderer.entity.EntityRenderers;
@@ -49,6 +50,7 @@ public class RubyMod
         ModCreativeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModSounds.register(modEventBus);
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
         ModEntities.register(modEventBus);

@@ -3,6 +3,9 @@ package com.example.rubymod.entity.custom;
 import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.entity.monster.Zombie;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.AgeableMob;
 import net.minecraft.world.entity.AnimationState;
 import net.minecraft.world.entity.EntityType;
@@ -15,6 +18,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.Nullable;
 
+import com.example.rubymod.sound.ModSounds;
 import com.example.rubymod.items.ModItems;
 
 public class ElephantEntity extends Animal{
@@ -78,4 +82,9 @@ public class ElephantEntity extends Animal{
             this.setupAnimationStates();
         }
     }
+    @Override
+    protected SoundEvent getHurtSound(DamageSource damageSource) {
+        return ModSounds.ELEPHANT_SOUND.get(); // Replace with your custom sound
+}
+
 }

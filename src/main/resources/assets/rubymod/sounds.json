@@ -1,0 +1,14 @@
+{
+    "gun_sound": {
+      "subtitle": "sound.rubymod.gun_sound",
+      "sounds": [
+        "rubymod:gun_sound"
+      ]
+    },
+    "elephant_sound": {
+      "subtitle": "sound.rubymod.elephant_sound",
+      "sounds": [
+        "rubymod:elephant_sound"
+      ]
+    }
+}

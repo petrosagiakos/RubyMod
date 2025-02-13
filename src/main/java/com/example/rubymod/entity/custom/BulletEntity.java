@@ -1,6 +1,7 @@
 package com.example.rubymod.entity.custom;
 
 import com.example.rubymod.entity.ModEntities;
+import com.example.rubymod.sound.ModSounds;
 
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.damagesource.DamageTypes;
@@ -13,6 +14,7 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundEvent;
 
 
 public class BulletEntity extends AbstractArrow {
@@ -46,7 +48,7 @@ public class BulletEntity extends AbstractArrow {
 
         this.discard(); // Remove bullet after hitting an entity
     }
-    
+   
     @Override
     public void tick() {
         super.tick();

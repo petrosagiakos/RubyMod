@@ -11,6 +11,7 @@ import net.minecraft.world.level.Level;
 
 import com.example.rubymod.entity.ModEntities;
 import com.example.rubymod.items.ModItems;
+import com.example.rubymod.sound.ModSounds;
 import com.example.rubymod.entity.custom.BulletEntity;
 
 public class Gun extends Item {
@@ -27,9 +28,13 @@ public class Gun extends Item {
             if (!world.isClientSide) { // Server-side execution
                 ItemStack bullets=getAmmo(player);
                 BulletEntity bullet = new BulletEntity(ModEntities.BULLET.get(),world, player,ammo);
+                world.playSound(null, player.getX(), player.getY(), player.getZ(), ModSounds.GUN_SOUND.get(),SoundSource.PLAYERS, 1.0F, 1.0F);//playing custom sound
+
                 bullet.shootFromRotation(player, player.getXRot(), player.getYRot(), 0.0F, 100.0F, 0.0F);//last parameter: defines the percision of the target
                 world.addFreshEntity(bullet);
                 bullets.shrink(1);//reduces the bullets by one
+                
+
             }
             return InteractionResultHolder.sidedSuccess(stack, world.isClientSide());
         }else {

@@ -7,6 +7,7 @@ import com.example.rubymod.items.custom_items.HealItem;
 import com.example.rubymod.items.custom_items.FireSword;
 import com.example.rubymod.items.custom_items.Gun;
 import com.example.rubymod.items.custom_items.SpearItem;
+import com.example.rubymod.sound.ModSounds;
 
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.PickaxeItem;
