@@ -306,5 +306,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('A', Items.COPPER_INGOT)
                 .define('C', Items.GUNPOWDER)
                 .unlockedBy(getHasName(Items.GUNPOWDER), has(Items.GUNPOWDER)).save(pRecipeOutput);
+
+                ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.MAGIC_WAND.get(),1)
+                .pattern("  A")
+                .pattern(" C ")
+                .pattern("C  ")
+                .define('A', Items.EMERALD)
+                .define('C', Items.STICK)
+                .unlockedBy(getHasName(Items.EMERALD), has(Items.EMERALD)).save(pRecipeOutput);
     }
 }

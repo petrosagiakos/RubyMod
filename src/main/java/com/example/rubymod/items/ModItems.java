@@ -3,10 +3,12 @@ package com.example.rubymod.items;
 import com.example.rubymod.RubyMod;
 import com.example.rubymod.entity.ModEntities;
 import com.example.rubymod.items.custom_items.MagicBlade;
+import com.example.rubymod.items.custom_items.MagicWand;
 import com.example.rubymod.items.custom_items.HealItem;
 import com.example.rubymod.items.custom_items.FireSword;
 import com.example.rubymod.items.custom_items.Gun;
 import com.example.rubymod.items.custom_items.SpearItem;
+import com.example.rubymod.items.custom_items.MagicWand;
 import com.example.rubymod.sound.ModSounds;
 
 import net.minecraft.world.item.Item;
@@ -29,7 +31,7 @@ public class ModItems{
     public static final RegistryObject<Item> RUBY = ITEMS.register("ruby",() -> new Item(new Item.Properties()));
     
     public static final RegistryObject<Item> RUBY_SWORD = ITEMS.register("ruby_sword", () -> new SwordItem(ModToolTiers.RUBY, new Item.Properties()
-    .attributes(SwordItem.createAttributes(ModToolTiers.RUBY, 8, -2.4f))));
+    .attributes(SwordItem.createAttributes(ModToolTiers.RUBY, 8, -2.4f)))); //8=how damage the sword makes
     
     public static final RegistryObject<Item> RUBY_PICKAXE = ITEMS.register("ruby_pickaxe", () -> new PickaxeItem(ModToolTiers.RUBY, new Item.Properties()
     .attributes(PickaxeItem.createAttributes(ModToolTiers.RUBY, 3, -2.5f))));
@@ -94,6 +96,9 @@ public class ModItems{
     public static final RegistryObject<Item> BULLET_ITEM=ITEMS.register("bullet", ()->new Item(new Item.Properties()));
     public static final RegistryObject<Item> GUN = ITEMS.register("gun", ()->new Gun(new Item.Properties().durability(25000)));
     public static final RegistryObject<Item> ELEPHANT_SPAWN_EGG = ITEMS.register("elephant_spawn_egg", () -> new ForgeSpawnEggItem(ModEntities.ELEPHANT,0x736452 , 0x45af23, new Item.Properties()));
+    
+    public static final RegistryObject<Item> MAGIC_WAND = ITEMS.register("wand", () ->new MagicWand(new Item.Properties().durability(1000)));
+    
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }

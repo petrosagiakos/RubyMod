@@ -59,7 +59,8 @@ public class ModItemModelProvider extends ItemModelProvider{
         withExistingParent(ModItems.ELEPHANT_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
         handheldItem(ModItems.GUN);
         basicItem(ModItems.BULLET_ITEM.get());
-        
+        handheldItem(ModItems.MAGIC_WAND);
+
 
     }
      private ItemModelBuilder handheldItem(RegistryObject<Item> item) {

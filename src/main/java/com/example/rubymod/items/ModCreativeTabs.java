@@ -57,6 +57,7 @@ public class ModCreativeTabs {
                 output.accept(ModItems.ELEPHANT_SPAWN_EGG.get());
                 output.accept(ModItems.GUN.get());
                 output.accept(ModItems.BULLET_ITEM.get());
+                output.accept(ModItems.MAGIC_WAND.get());
             }).build());
             //Block Tab
     public static final RegistryObject<CreativeModeTab> RUBY_BLOCKS_TAB=CREATIVE_MODE_TABS.register("ruby_blocks_tab",
