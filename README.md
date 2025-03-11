@@ -7,7 +7,7 @@
 ## **Features**
 - Feature 1: Ruby armor and tools.
 - Feature 2: Emerald, copper armor and tools.
-- Feature 3: Extra features foods, magic sticks etc.
+- Feature 3: Extra features, foods, magic sticks etc.
 
 ---
 
@@ -25,7 +25,7 @@
 - Step 2: Download forge-1.21.1-52.0.28 and Install it.
 - Step 3: Open minecraft launcher and select the forge version above.
 - Step 4: Download the .jar file and paste it in the forge mods folder.
-### **Requirements for minecraft **
+### **Requirements for minecraft**
 - **Minecraft Version:** 1.21.1
 - **Mod Loader:** [Forge](https://files.minecraftforge.net/) version 1.21.1-52.0.28
 - **Java Version:** 17+
